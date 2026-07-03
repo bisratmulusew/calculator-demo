@@ -10,58 +10,66 @@
 <body>
     <div class="container">
         <div id="labels">
-            <button id="option"><i class="fa-solid fa-bars"></i></button>
-            <button id="history"><i class="fa-light fa-clock-rotate-left"></i></button>
+            <button id="scientificToggle"><i class="fa-solid fa-bars"></i></button>
+            <button id="history"><i class="fa-solid fa-clock-rotate-left"></i></button>
         </div>
         <div id="display">
             <div id="expressions"></div>
             <div id="result">0</div>
         </div>
         <div id="keys">
-            <button><i class="fa-light fa-delete-left"></i></button>
-            <button>AC</button>
-            <button>%</button>
-            <button>/</button>
-            <button>*</button>
-            <button>-</button>
-            <button>+</button>
-            <button>=</button>
-            <button>9</button>
-            <button>8</button>
-            <button>7</button>
-            <button>6</button>
-            <button>5</button>
-            <button>4</button>
-            <button>3</button>
-            <button>2</button>
-            <button>1</button>
-            <button>.</button>
-            <button>0</button>
-            <button>+/-</button>
-            <button>(</button>
-            <button>)</button>
-            <button>mr</button>
-            <button>m-</button>
-            <button>m+</button>
-            <button>mc</button>
-            <button>ln</button>
-            <button>log</button>
-            <button>e</button>
-            <button>&pi;</button>
-            <button>10 <sub>X</sub></button>
-            <button>X <sub>2</sub></button>
-            <button>X <sub>3</sub></button>
-            <button>X <sub>y</sub></button>
-            <button>&radic;</button>
-            <button>&#8731;</button>
-            <button>y <sub>&radic;X</sub></button>
-            <button>sin</button>
-            <button>cos</button>
-            <button>tan</button>
-            <button>sinh</button>
-            <button>cosh</button>
-            <button>tanh</button>
+            <div id="stan-keys">
+                <button><i class="fa-solid fa-delete-left"></i></button>
+                <button>AC</button>
+                <button class="key operator" data-action="operator" data-value="%">%</button>
+                <button class=" key operator" data-action="operator" data-value="/">÷</button>
+                <button class=" key operator" data-action="operator" data-value="*">×</button>
+                <button class=" key operator" data-action="operator" data-value="-">-</button>
+                <button class=" key operator" data-action="operator" data-value="+">+</button>
+                <button class=" key operator" data-action="operator" data-value="=">=</button>
+                <button class=" key number" data-action="number" data-value="9">9</button>
+                <button class=" key number" data-action="number" data-value="8">8</button>
+                <button class=" key number" data-action="number" data-value="7">7</button>
+                <button class=" key number" data-action="number" data-value="6">6</button>
+                <button class=" key number" data-action="number" data-value="5">5</button>
+                <button class=" key number" data-action="number" data-value="4">4</button>
+                <button class=" key number" data-action="number" data-value="3">3</button>
+                <button class=" key number" data-action="number" data-value="2">2</button>
+                <button class=" key number" data-action="number" data-value="1">1</button>
+                <button>.</button>
+                <button>0</button>
+                <button>+/-</button>
+            </div>
+            <div id="scifi-keys">
+                <button>(</button>
+                <button>)</button>
+                <button>mr</button>
+                <button>m-</button>
+                <button>m+</button>
+                <button>mc</button>
+                <button class="key function" data-action="ln" data-value="ln">ln</button>
+                <button class="key function" data-action="log" data-value="log">log</button>
+                <button class="key function" data-action="e" data-value="e">e</button>
+                <button>&pi;</button>
+                <button>10<sup>x</sup></button>
+                <button class=" key function" data-action="square" data-value="x^2">x<sup>2</sup></button>
+                <button class="key function" data-action="cube" data-value="x^3">x<sup>3</sup></button>
+                <button>x<sup>y</sup></button>
+                <button>&radic;x</button>
+                <button>&#8731;x</button>
+                <button>y<sub>&radic;X</sub></button>
+                <button class="key function" data-action="sin" data-value="sin">sin</button>
+                <button class="key function" data-action="cos" data-value="cos">cos</button>
+                <button class="key function" data-action="tan" data-value="tan">tan</button>
+                <button class="key function" data-action="sinh" data-value="sinh">sinh</button>
+                <button class="key function" data-action="cosh" data-value="cosh">cosh</button>
+                <button class="key function" data-action="tanh" data-value="tanh">tanh</button>
+            </div>
         </div>
+    </div>
+    <div id="historyPanel">
+        <h3>History</h3>
+        <ul id="historyList"></ul>
     </div>
 
     <script src="index.js"></script>
