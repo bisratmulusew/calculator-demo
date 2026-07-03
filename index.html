@@ -19,8 +19,8 @@
         </div>
         <div id="keys">
             <div id="stan-keys">
-                <button><i class="fa-solid fa-delete-left"></i></button>
-                <button>AC</button>
+                <button class="key clear" data-action="delete" data-value="del"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="key clear" data-action="clear" data-value="ac">AC</button>
                 <button class="key operator" data-action="operator" data-value="%">%</button>
                 <button class=" key operator" data-action="operator" data-value="/">÷</button>
                 <button class=" key operator" data-action="operator" data-value="*">×</button>
@@ -36,34 +36,38 @@
                 <button class=" key number" data-action="number" data-value="3">3</button>
                 <button class=" key number" data-action="number" data-value="2">2</button>
                 <button class=" key number" data-action="number" data-value="1">1</button>
-                <button>.</button>
-                <button>0</button>
-                <button>+/-</button>
+                <button class=" key number" data-action="decimal" data-value=".">.</button>
+                <button class=" key number" data-action="number" data-value="0">0</button>
+                <button class=" key number" data-action="negate" data-value="+/-">+/-</button>
             </div>
             <div id="scifi-keys">
-                <button>(</button>
-                <button>)</button>
-                <button>mr</button>
-                <button>m-</button>
-                <button>m+</button>
-                <button>mc</button>
+                <button class="key function" data-action="open-paren" data-value="(">(</button>
+                <button class="key function" data-action="close-paren" data-value=")">)</button>
+                <button class="key memory" data-action="memory-recall" data-value="mr">mr</button>
+                <button class="key memory" data-action="memory-subtract" data-value="m-">m-</button>
+                <button class="key memory" data-action="memory-add" data-value="m+">m+</button>
+                <button class="key memory" data-action="memory-clear" data-value="mc">mc</button>
+                <button class="key function" data-action="second" data-value="2nd">2<sup>nd</sup></button>
                 <button class="key function" data-action="ln" data-value="ln">ln</button>
                 <button class="key function" data-action="log" data-value="log">log</button>
                 <button class="key function" data-action="e" data-value="e">e</button>
-                <button>&pi;</button>
-                <button>10<sup>x</sup></button>
+                <button class="key function" data-action="pi" data-value="pi">&pi;</button>
+                <button class="key function" data-action="power-of-10" data-value="10^x">10<sup>x</sup></button>
                 <button class=" key function" data-action="square" data-value="x^2">x<sup>2</sup></button>
                 <button class="key function" data-action="cube" data-value="x^3">x<sup>3</sup></button>
-                <button>x<sup>y</sup></button>
-                <button>&radic;x</button>
-                <button>&#8731;x</button>
-                <button>y<sub>&radic;X</sub></button>
+                <button class="key function" data-action="power" data-value="x^y">x<sup>y</sup></button>
+                <button class="key function" data-action="sqrt" data-value="sqrt(x)">&radic;x</button>
+                <button class="key function" data-action="cbrt" data-value="cbrt(x)">&#8731;x</button>
+                <button class="key function" data-action="yroot" data-value="y-root">y<sub>&radic;X</sub></button>
                 <button class="key function" data-action="sin" data-value="sin">sin</button>
                 <button class="key function" data-action="cos" data-value="cos">cos</button>
                 <button class="key function" data-action="tan" data-value="tan">tan</button>
                 <button class="key function" data-action="sinh" data-value="sinh">sinh</button>
                 <button class="key function" data-action="cosh" data-value="cosh">cosh</button>
                 <button class="key function" data-action="tanh" data-value="tanh">tanh</button>
+                <button class="key function" data-action="factorial" data-value="x!">x!</button>
+                <button class="key function" data-action="random" data-value="rand">Rand</button>
+                <button class="key mode" data-action="angle-mode" data-value="rad">Rad</button>
             </div>
         </div>
     </div>
