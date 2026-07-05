@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <div class="app-wrapper">
     <div class="container">
         <div id="labels">
             <button id="scientificToggle"><i class="fa-solid fa-bars"></i></button>
@@ -18,28 +19,6 @@
             <div id="result">0</div>
         </div>
         <div id="keys">
-            <div id="stan-keys">
-                <button class="key clear" data-action="delete" data-value="del"><i class="fa-solid fa-delete-left"></i></button>
-                <button class="key clear" data-action="clear" data-value="ac">AC</button>
-                <button class="key operator" data-action="percent" data-value="%">%</button>
-                <button class="key operator" data-action="operator" data-value="/">÷</button>
-                <button class="key number" data-action="number" data-value="7">7</button>
-                <button class="key number" data-action="number" data-value="8">8</button>
-                <button class="key number" data-action="number" data-value="9">9</button>
-                <button class="key operator" data-action="operator" data-value="*">×</button>
-                <button class="key number" data-action="number" data-value="4">4</button>
-                <button class="key number" data-action="number" data-value="5">5</button>
-                <button class="key number" data-action="number" data-value="6">6</button>
-                <button class="key operator" data-action="operator" data-value="-">-</button>
-                <button class="key number" data-action="number" data-value="1">1</button>
-                <button class="key number" data-action="number" data-value="2">2</button>
-                <button class="key number" data-action="number" data-value="3">3</button>
-                <button class="key operator" data-action="operator" data-value="+">+</button>
-                <button class="key number" data-action="negate" data-value="+/-">+/-</button>
-                <button class="key number" data-action="number" data-value="0">0</button>
-                <button class="key number" data-action="decimal" data-value=".">.</button>
-                <button class="key operator" data-action="equals" data-value="=">=</button>
-            </div>
             <div id="scifi-keys">
                 <button class="key function" data-action="open-paren" data-value="(">(</button>
                 <button class="key function" data-action="close-paren" data-value=")">)</button>
@@ -69,11 +48,34 @@
                 <button class="key function" data-action="random" data-value="rand">Rand</button>
                 <button class="key mode" data-action="angle-mode" data-value="rad">Rad</button>
             </div>
+            <div id="stan-keys">
+                <button class="key clear" data-action="delete" data-value="del"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="key clear" data-action="clear" data-value="ac">AC</button>
+                <button class="key operator" data-action="percent" data-value="%">%</button>
+                <button class="key operator" data-action="operator" data-value="/">÷</button>
+                <button class="key number" data-action="number" data-value="7">7</button>
+                <button class="key number" data-action="number" data-value="8">8</button>
+                <button class="key number" data-action="number" data-value="9">9</button>
+                <button class="key operator" data-action="operator" data-value="*">×</button>
+                <button class="key number" data-action="number" data-value="4">4</button>
+                <button class="key number" data-action="number" data-value="5">5</button>
+                <button class="key number" data-action="number" data-value="6">6</button>
+                <button class="key operator" data-action="operator" data-value="-">-</button>
+                <button class="key number" data-action="number" data-value="1">1</button>
+                <button class="key number" data-action="number" data-value="2">2</button>
+                <button class="key number" data-action="number" data-value="3">3</button>
+                <button class="key operator" data-action="operator" data-value="+">+</button>
+                <button class="key number" data-action="negate" data-value="+/-">+/-</button>
+                <button class="key number" data-action="number" data-value="0">0</button>
+                <button class="key number" data-action="decimal" data-value=".">.</button>
+                <button class="key operator" data-action="equals" data-value="=">=</button>
+            </div>          
         </div>
     </div>
     <div id="historyPanel">
         <h3>History</h3>
         <ul id="historyList"></ul>
+    </div>
     </div>
 
     <script src="index.js"></script>
