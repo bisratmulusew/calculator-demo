@@ -49,11 +49,26 @@ body{
     align-items: center;
     justify-content: center;
 }
+.key sup{
+    font-size: 0.65em;
+    vertical-align: super;
+    position: relative;
+    top: -0.3em;
+}
 .operator{
     background-color: rgb(64, 187, 228);
 }
 .clear{
     background-color: rgba(216, 208, 208, 0.637);
+}
+.function{
+    background-color: rgb(175, 224, 240);
+}
+.mode{
+    background-color: rgb(175, 224, 240);
+}
+.memory{
+    background-color: rgb(175, 224, 240);
 }
 #historyPanel{
     width: 0;
